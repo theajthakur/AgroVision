@@ -1,0 +1,21 @@
+a.special-nav-link {
+  position: relative;
+}
+
+a.special-nav-link:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  margin-left: 50%;
+  height: 2px;
+  background: var(--color-secondary);
+  border-radius: 5px;
+  bottom: -5px;
+  left: -10%;
+  transition: 0.5s;
+}
+
+a.special-nav-link:hover:before {
+  width: 120%;
+  margin-left: 0;
+}

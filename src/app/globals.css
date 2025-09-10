@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-light: #f7f9f6; /* very light green / off-white */
+  --color-dark: #1e2a1f; /* dark green / almost black for text */
+  --color-grey: #292929;
+
+  --color-background: #ffffff; /* clean white */
+  --color-surface: #f0f5ef; /* soft green surface/background for cards */
+  --color-foreground: #1e2a1f; /* main text color */
+
+  --color-primary: #4caf50; /* vibrant green for buttons, links */
+  --color-secondary: #8bc34a; /* lighter green for accents, hover */
+  --color-accent: #ffc107; /* warm yellow for highlights / call to action */
+  --color-border: #e0e6da; /* subtle greenish border */
+
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+}
+
+:root {
+  --color-light: #f7f9f6; /* very light green / off-white */
+  --color-dark: #1e2a1f; /* dark green / almost black for text */
+  --color-grey: #292929;
+
+  --color-background: #ffffff; /* clean white */
+  --color-surface: #f0f5ef; /* soft green surface/background for cards */
+  --color-foreground: #1e2a1f; /* main text color */
+
+  --color-primary: #4caf50; /* vibrant green for buttons, links */
+  --color-secondary: #8bc34a; /* lighter green for accents, hover */
+  --color-accent: #ffc107; /* warm yellow for highlights / call to action */
+  --color-border: #e0e6da; /* subtle greenish border */
+
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
