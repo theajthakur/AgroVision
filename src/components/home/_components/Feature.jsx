@@ -4,27 +4,27 @@ import { BarChart2, Droplet, Sun, MapPin } from "lucide-react";
 const features = [
   {
     icon: <BarChart2 className="w-8 h-8 text-primary" />,
-    title: "Predict Crop Yield",
+    title: "फ़सल उत्पादन पूर्वानुमान",
     description:
-      "Use historical agricultural data, weather patterns, and soil health metrics to accurately predict crop output.",
+      "ऐतिहासिक कृषि डेटा, मौसम के पैटर्न और मिट्टी के स्वास्थ्य मेट्रिक्स का उपयोग करके फ़सल उत्पादन का सटीक पूर्वानुमान लगाएं।",
   },
   {
     icon: <Droplet className="w-8 h-8 text-primary" />,
-    title: "Optimize Irrigation",
+    title: "सिंचाई अनुकूलन",
     description:
-      "Receive actionable recommendations to optimize water usage for better crop growth and resource management.",
+      "बेहतर फ़सल विकास और संसाधन प्रबंधन के लिए जल उपयोग को अनुकूलित करने के व्यावहारिक सुझाव प्राप्त करें।",
   },
   {
     icon: <Sun className="w-8 h-8 text-primary" />,
-    title: "Fertilization & Pest Control",
+    title: "उर्वरक और कीट नियंत्रण",
     description:
-      "Get guidance on fertilization schedules and pest management tailored to your crop and region.",
+      "अपने फ़सल और क्षेत्र के अनुसार उर्वरक देने का समय और कीट प्रबंधन पर मार्गदर्शन प्राप्त करें।",
   },
   {
     icon: <MapPin className="w-8 h-8 text-primary" />,
-    title: "Regional Insights",
+    title: "क्षेत्रीय अंतर्दृष्टि",
     description:
-      "Supports multiple languages and provides recommendations based on regional conditions and crop type.",
+      "कई भाषाओं का समर्थन करता है और क्षेत्रीय परिस्थितियों व फ़सल के प्रकार के आधार पर सुझाव प्रदान करता है।",
   },
 ];
 
@@ -33,11 +33,11 @@ export default function Features() {
     <section className="bg-background text-foreground font-sans py-16 px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-heading font-bold text-primary">
-          Key Features
+          मुख्य विशेषताएँ
         </h2>
         <p className="text-foreground/80 mt-4">
-          AgroVision leverages AI to provide farmers with data-driven insights
-          to maximize crop productivity.
+          AgroVision AI का उपयोग करता है ताकि किसानों को डेटा-आधारित सुझाव मिल
+          सकें और वे अपनी फ़सल की उत्पादकता अधिकतम कर सकें।
         </p>
       </div>
 
