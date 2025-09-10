@@ -15,55 +15,55 @@ export default function Header() {
               <div className="logo-container">
                 <img
                   src="/favicon/android-chrome-512x512.png"
-                  alt="Logo"
+                  alt="लोगो"
                   width={80}
                 />
               </div>
               <div className="logo-detail">
                 <div className="">
-                  <p className="text-[25px]">AgroVision</p>
-                  <p className="text-[16px]">Smart Fields, Smart Yields</p>
+                  <p className="text-[25px]">एग्रोविज़न</p>
+                  <p className="text-[16px]">स्मार्ट खेत, स्मार्ट उपज</p>
                 </div>
               </div>
             </div>
           </Link>
 
-          {/* Desktop Navigation Links */}
+          {/* डेस्कटॉप नेविगेशन लिंक */}
           <div className="hidden md:flex space-x-8 font-sans text-foreground">
             <a
               href="#home"
               className="special-nav-link hover:text-secondary transition"
             >
-              Home
+              होम
             </a>
             <a
               href="#features"
               className="special-nav-link hover:text-secondary transition"
             >
-              Features
+              फीचर्स
             </a>
             <a
               href="#about"
               className="special-nav-link hover:text-secondary transition"
             >
-              About
+              हमारे बारे में
             </a>
             <a
               href="#contact"
               className="special-nav-link hover:text-secondary transition"
             >
-              Contact
+              संपर्क करें
             </a>
           </div>
 
-          {/* Desktop CTA Button */}
+          {/* डेस्कटॉप CTA बटन */}
           <div className="hidden md:flex">
             <button className="bg-secondary text-foreground px-4 py-2 rounded-lg font-semibold hover:bg-[var(--color-primary)] transition">
-              Sign Up
+              साइन अप करें
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* मोबाइल मेनू बटन */}
           <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
@@ -86,35 +86,35 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* मोबाइल मेनू */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-2 space-y-2 text-foreground font-sans">
             <a
               href="#home"
               className="block px-4 py-2 hover:bg-secondary/10 rounded"
             >
-              Home
+              होम
             </a>
             <a
               href="#features"
               className="block px-4 py-2 hover:bg-secondary/10 rounded"
             >
-              Features
+              फीचर्स
             </a>
             <a
               href="#about"
               className="block px-4 py-2 hover:bg-secondary/10 rounded"
             >
-              About
+              हमारे बारे में
             </a>
             <a
               href="#contact"
               className="block px-4 py-2 hover:bg-secondary/10 rounded"
             >
-              Contact
+              संपर्क करें
             </a>
             <button className="w-full text-left px-4 py-2 bg-secondary text-foreground rounded-lg font-semibold hover:bg-[var(--color-primary)] transition">
-              Sign Up
+              साइन अप करें
             </button>
           </div>
         )}

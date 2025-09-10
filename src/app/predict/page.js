@@ -28,7 +28,7 @@ export default function PredictionForm() {
       landArea: formData.landArea,
       soilType: formData.soilType,
     };
-    data.predictedYield = "24 क्विंटल / एकड़";
+    data.predictedYield = `${(data.landArea * 6.5).toFixed(2) ?? 24} क्विंटल`;
     data.recommendations = [
       "सिंचाई हर 7 दिन में करें।",
       "नाइट्रोजन आधारित उर्वरक का प्रयोग करें।",
