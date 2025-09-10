@@ -21,8 +21,8 @@ export default function Header() {
               </div>
               <div className="logo-detail">
                 <div className="">
-                  <p className="text-[25px]">एग्रोविज़न</p>
-                  <p className="text-[16px]">स्मार्ट खेत, स्मार्ट उपज</p>
+                  <p className="text-[25px]">AgroVision</p>
+                  <p className="text-[16px]">Smart Fields, Smart Yields</p>
                 </div>
               </div>
             </div>
