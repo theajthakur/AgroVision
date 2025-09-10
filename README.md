@@ -1,36 +1,139 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AgroVision
 
-## Getting Started
+## Problem Statement
 
-First, run the development server:
+**AI-Powered Crop Yield Prediction and Optimization**
 
-```bash
+Develop an AI-based platform to predict crop yields using historical agricultural data, weather patterns, and soil health metrics. The system provides actionable recommendations to optimize irrigation, fertilization, and pest control tailored to specific crops and regional conditions.
+
+---
+
+## Expected Outcome
+
+A scalable web/mobile solution that helps small-scale farmers increase productivity by **at least 10%**, with an interface supporting regional languages for accessibility.
+
+---
+
+## Proposed Solution (Concise)
+
+- AI-powered platform (web + mobile PWA) that predicts crop yield using historical datasets, weather APIs, and soil metrics.
+- Recommends best sowing period, irrigation schedule, fertilization dosage, and pest-control actions.
+- Provides multilingual chatbot, community alerts, offline access, and local booths for soil testing & consultation.
+
+---
+
+## Key Features
+
+- Crop yield prediction (AI/ML)
+- Optimal sowing time recommendation
+- Irrigation & fertilization optimization
+- Pest & disease alerts (location-based)
+- Multilingual chatbot for farmer guidance
+- Offline-first support + local booths for soil testing
+- NGO & community integration for outreach
+
+---
+
+## Technology Stack
+
+- **Frontend:** Next.js, React, Tailwind CSS
+- **Backend:** Node.js, Express (or Next.js API routes)
+- **Database:** MongoDB (Atlas)
+- **AI/ML:** Python (scikit-learn, XGBoost / TensorFlow / PyTorch)
+- **APIs:** WeatherAPI, SoilGrids (or similar)
+- **Maps/Location:** Mapbox / Google Maps
+- **i18n:** next-intl (or alternative)
+- **Deployment:** Vercel (frontend), DigitalOcean / Render / AWS (backend & ML)
+
+---
+
+## Workflow (High-level)
+
+1. Farmer selects crop & optionally enters soil data; system fetches weather & soil via APIs.
+2. Data preprocessing & feature engineering (GDD, cumulative rainfall, NDVI if available).
+3. ML model predicts yield and optimal sowing window.
+4. Recommendation engine produces irrigation/fertilization/pest-control plan.
+5. Deliver results via dashboard, chatbot, community alerts; support offline sync & booth workflows.
+
+---
+
+## Implementation Steps (MVP)
+
+1. Data collection & research (open datasets + APIs).
+2. Baseline model (XGBoost/LightGBM) + evaluation (RMSE / R²).
+3. Backend API for /predict and farmer CRUD.
+4. Frontend farmer dashboard (mobile-first) + multilingual UI.
+5. Chatbot + community alerts + offline support.
+6. Pilot & simulated evaluation to show productivity uplift.
+
+---
+
+## How to Run (local - example)
+
+\`\`\`bash
+
+# clone
+
+git clone https://github.com/your-repo/agrovision.git
+cd agrovision
+
+# backend (example)
+
+cd backend
+
+# create venv and install requirements for Python ML/backend
+
+pip install -r requirements.txt
+
+# run api
+
+uvicorn main:app --reload --port 8000
+
+# frontend
+
+cd ../frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Team Roles (recommended)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Frontend (Next.js, Tailwind)
+- Backend & Integration (APIs, DB)
+- ML / Data (model training, feature engineering) — can start with pre-trained models / public models
+- UX & Documentation (design, PPT, pitch)
+- Outreach (NGO / field partners)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Feasibility & Impact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Feasible:** Uses proven ML techniques + open datasets + realtime APIs.
+- **Impact:** Improves farmer decision-making, resource optimization, and expected productivity uplift (~10%+).
+- **Sustainability:** Offline support, booths, and NGO partnerships boost adoption.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## References (IEEE style)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[1] Kaggle, “Crop Recommendation Dataset.” [Online]. Available: https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset  
+[2] Food and Agriculture Organization (FAO), “FAOSTAT Agricultural Data.” [Online]. Available: https://www.fao.org/faostat/en/  
+[3] WeatherAPI, “Real-time weather data API.” [Online]. Available: https://www.weatherapi.com/  
+[4] SoilGrids, “Global soil information based on machine learning.” [Online]. Available: https://soilgrids.org/  
+[5] NITI Aayog, “AI in Agriculture: Applications & Opportunities.” [Online]. Available: https://www.niti.gov.in/  
+[6] Ministry of Agriculture & Farmers Welfare, Government of India, “Agriculture Statistics.” [Online]. Available: https://agricoop.gov.in/  
+[7] Next.js Documentation. [Online]. Available: https://nextjs.org/  
+[8] MongoDB Documentation. [Online]. Available: https://www.mongodb.com/  
+[9] TensorFlow. [Online]. Available: https://www.tensorflow.org/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## License
+
+MIT
+
+---
+
+**Project:** AgroVision — AI-Powered Crop Yield Prediction and Optimization
